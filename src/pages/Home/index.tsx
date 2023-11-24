@@ -1,10 +1,11 @@
 import React from 'react';
+import imageBackground from '../../assets/falaise.jpg'
 
 function Home() {
   return (
-    <div className="App">
-      First commit!
-    </div>
+    <main>
+      main
+    </main>
   );
 }
 

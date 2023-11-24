@@ -11,8 +11,7 @@ import Propos from './pages/Propos';
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <Layout><Home /></Layout>,
-    errorElement: <Layout><Error /></Layout>,
+    element: <Layout><Home /></Layout>
   },
   {
     path:"logement",
@@ -21,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:"propos",
     element: <Layout><Propos /></Layout>
+  },
+  {
+    path:"*",
+    element: <Layout><Error /></Layout>
   }
 ])
 
