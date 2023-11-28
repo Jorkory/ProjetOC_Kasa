@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './components/Layout';
+import Layout from './components/layout';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Logement from './pages/Logement';
@@ -10,19 +10,19 @@ import Propos from './pages/Propos';
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <Layout><Home /></Layout>
   },
   {
-    path:"logement",
+    path: "logements/:logementId",
     element: <Layout><Logement /></Layout>
   },
   {
-    path:"propos",
+    path: "propos",
     element: <Layout><Propos /></Layout>
   },
   {
-    path:"*",
+    path: "*",
     element: <Layout><Error /></Layout>
   }
 ])

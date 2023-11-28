@@ -4,19 +4,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
 }
 
-.header_logo {
+.header__logo {
     width: 210px;
     height: 68px;
     fill: #FF6060;
 }
 
-.nav_link {
-    font-size: 1.5rem;
-    color: #FF6060;
-    text-decoration: none;
-    margin-left: 57px;
-    
+.navbar {
+    list-style: none;
+    display: flex;
+
+
+    &__link {
+        font-size: 1.5rem;
+        color: #FF6060;
+        text-decoration: none;
+        margin-left: 57px;
+        
+        &.active {
+            text-decoration: underline;
+        }
+    }
 }

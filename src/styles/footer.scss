@@ -2,10 +2,6 @@
 
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     background: black;
     height: 210px;
     display: flex;
@@ -14,7 +10,7 @@ footer {
     justify-content: center;
 }
 
-.footer_logo {
+.footer__logo {
     width: 122px;
     fill: white;
 }

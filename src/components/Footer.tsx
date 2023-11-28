@@ -1,10 +1,10 @@
-import { ReactComponent as Logo} from '../assets/logoKasa.svg'
+import { ReactComponent as Logo } from '../assets/logoKasa.svg'
 import "../styles/footer.scss"
 
 export default function Footer() {
-    return(
+    return (
         <footer>
-            <Logo className='footer_logo'/>
+            <Logo className='footer__logo' />
             <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     )
