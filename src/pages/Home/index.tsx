@@ -1,15 +1,16 @@
-import imageBackground from '../../assets/falaise.jpg'
-import Article from '../../components/article';
+import bannerImage from '../../assets/falaise.jpg'
+import Banner from '../../components/banner';
+import Card from '../../components/card';
 
 function Home() {
+
   return (
     <main>
       <section className='banner'>
-        <h1 className='banner__title'>Chez vous, partout et ailleurs</h1>
-        <img className='banner__image' src={imageBackground} alt='falaise rocheuse au bord de la mer' />
+        <Banner title="Chez vous, partout et ailleurs" image={bannerImage} alt='falaise rocheuse au bord de la mer' />
       </section>
       <section className='articles'>
-        <Article />
+        <Card />
       </section>
     </main>
   );

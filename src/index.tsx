@@ -7,6 +7,7 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import Logement from './pages/Logement';
 import Propos from './pages/Propos';
+import "./styles/global.scss"
 
 const router = createBrowserRouter([
   {

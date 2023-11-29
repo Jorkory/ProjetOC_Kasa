@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import jsonData from '../data/logements.json'
 
-export default function Article() {
+export default function Card() {
     const data = jsonData
 
     return (

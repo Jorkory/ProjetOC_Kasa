@@ -1,3 +1,5 @@
+@use './header.scss';
+@use './footer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400&family=Spectral&display=swap');
 
 $border-rad:25px; 
@@ -16,25 +18,32 @@ header, main {
 
 .banner{
     position: relative;
+    height: 220px;
     
     &__title {
-        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        inset: 0;
         text-align: center;
         line-height: 220px;
         font-size: 3rem;
         color: white;
-        border-radius: $border-rad;
     }
     
     &__image {
         width: 100%;
         height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
         object-fit: cover;
         border-radius: $border-rad;
+
+
+    }
+    &::before {
+        content:"";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: $border-rad;
+        z-index: 0;
     }
 
 }

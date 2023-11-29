@@ -1,5 +1,4 @@
 import { ReactComponent as Logo } from '../assets/logoKasa.svg'
-import "../styles/footer.scss"
 
 export default function Footer() {
     return (
