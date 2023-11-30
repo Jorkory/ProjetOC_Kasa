@@ -1,9 +1,9 @@
-export default function Banner(Props: { title?: string; image: string; alt: string }) {
+export default function Banner(props: { title?: string; image: string; alt: string }) {
 
     return (
         <>
-            <img className='banner__image' src={Props.image} alt={Props.alt} />
-            <h1 className='banner__title'>{Props.title}</h1>
+            <img className='banner__image' src={props.image} alt={props.alt} />
+            {props.title && <h1 className='banner__title'>{props.title}</h1>}
         </>
     )
 }

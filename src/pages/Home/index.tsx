@@ -1,6 +1,6 @@
 import bannerImage from '../../assets/falaise.jpg'
 import Banner from '../../components/banner';
-import Card from '../../components/card';
+import Cards from '../../components/cards';
 
 function Home() {
 
@@ -9,8 +9,8 @@ function Home() {
       <section className='banner'>
         <Banner title="Chez vous, partout et ailleurs" image={bannerImage} alt='falaise rocheuse au bord de la mer' />
       </section>
-      <section className='articles'>
-        <Card />
+      <section className='cards'>
+        <Cards />
       </section>
     </main>
   );

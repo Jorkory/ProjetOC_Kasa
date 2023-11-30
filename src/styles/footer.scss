@@ -1,19 +1,22 @@
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: black;
     height: 210px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.footer__logo {
-    width: 122px;
-    fill: white;
-}
+    .logo {
+        width: 122px;
+        fill: white;
+    }
 
-p {
-    margin-top: 28px;
-    font-size: 1.5rem;
-    color: white;
+    .copyright {
+        margin-top: 28px;
+        font-size: 1.5rem;
+        color: white;
+    }
 }
