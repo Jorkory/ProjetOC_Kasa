@@ -7,7 +7,6 @@
         position: relative;
         background-color: $color-primary;
         color: white;
-        font-weight: 400;
         border-radius: 5px;
         padding: 10px 15px;
         z-index: 1;
@@ -32,7 +31,6 @@
         max-height: 300px;
         transition: max-height 350ms;
         color: $color-primary;
-        font-size: 1.125rem;
         z-index: -1;
         overflow: hidden;
 
