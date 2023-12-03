@@ -1,0 +1,46 @@
+.slide {
+    height: 415px;
+    display: flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: $section-rad;    
+    
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        inset: 0;
+        transition: transform 400ms ease-in-out;
+    }
+
+    &__arrow{
+        position: absolute;        
+        border-top: 10px solid white;
+        border-right: 10px solid white;
+        height: 45px;
+        width: 45px;        
+        cursor: pointer;
+
+
+        &.left{
+            left: 35px;
+            rotate: -135deg;
+        }
+
+        &.right{
+            right: 35px;
+            rotate: 45deg;
+        }
+    }
+
+    &__count{
+        position: absolute;
+        color: white;
+        bottom: 25px;
+
+    }
+}
