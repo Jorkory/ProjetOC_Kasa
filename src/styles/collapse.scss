@@ -34,9 +34,10 @@
         z-index: -1;
         overflow: hidden;
 
-        & > p {
+        & > p, ul {
             padding: 20px;
             transition: transform 200ms 50ms;
+            list-style: none;
         }
         
         &.hidden {

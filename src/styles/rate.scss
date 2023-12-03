@@ -1,0 +1,13 @@
+.rating{
+    display: flex;
+    justify-content:flex-end;
+
+    &__star {
+        height: 36px;
+        fill: #e3e3e3;
+
+        &.fill {
+            fill: $color-primary;
+        }
+    }
+}
