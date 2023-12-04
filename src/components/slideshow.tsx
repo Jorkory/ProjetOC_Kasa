@@ -20,9 +20,9 @@ export default function Slideshow(props: { pictures: string[] }) {
                 <>
                     <div className="slide__arrow left" onClick={() => handleClick(1)}></div>
                     <div className="slide__arrow right" onClick={() => handleClick(-1)}></div>
+                    <div className="slide__count">{(-imageCurrent) + 1}/{props.pictures.length}</div>
                 </>
             }
-            <div className="slide__count">{(-imageCurrent) + 1}/{props.pictures.length}</div>
         </div>
     )
 }
