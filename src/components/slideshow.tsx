@@ -13,7 +13,7 @@ export default function Slideshow(props: { pictures: string[] }) {
         <div className="slide">
             {props.pictures.map((picture, index) =>
                 <picture key={index}>
-                    <img src={picture} alt='' style={{ transform: `translateX(${(index + imageCurrent) * 100}%)` }}></img>
+                    <img src={picture} alt='appartement' style={{ transform: `translateX(${(index + imageCurrent) * 100}%)` }}></img>
                 </picture>
             )}
             {props.pictures.length > 1 &&

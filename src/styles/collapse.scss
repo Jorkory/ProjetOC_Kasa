@@ -29,26 +29,27 @@
         }
     }
 
+    // overflow: hidden;
     &__content {
         background-color: $color-secondary;
         border-radius: 5px;
-        max-height: 300px;
-        transition: max-height 350ms;
+        max-height: 500px;
         color: $color-primary;
+        transition: max-height 400ms ease-in-out;
         z-index: -1;
         overflow: hidden;
-
+        
         & > p, ul {
             padding: 20px;
-            transition: transform 200ms 50ms;
             list-style: none;
+            transition: transform 400ms ease-in-out;
         }
         
         &.hidden {
-            max-height: 0px;
-           
+            max-height: 0;
+
             & > p, ul {
-                transform: translateY(-300px);
+                transform: translateY(-50px);
             }
         }     
     }

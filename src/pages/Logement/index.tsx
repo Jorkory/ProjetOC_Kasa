@@ -32,7 +32,7 @@ function Logement() {
                             <div>
                                 {logement.host.name.split(" ").map((name, index) => <p key={index}>{name}</p>)}
                             </div>
-                            <img src={logement.host.picture} alt="" />
+                            <img src={logement.host.picture} alt="portrait d'hôte" />
                         </div>
                         <Rate rating={Number(logement.rating)} />
                     </div>

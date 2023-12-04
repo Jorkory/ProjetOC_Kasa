@@ -21,6 +21,10 @@ $color-secondary: #F6F6F6;
     font-weight: 500;
 }
 
+html{
+    overflow-y: scroll;
+}
+
 #root {
     height: 100vh;
     display: flex;
