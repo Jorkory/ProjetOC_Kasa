@@ -2,21 +2,41 @@
     margin-bottom: 40px;
     position: relative;
     height: 220px;
+    border-radius: $section-rad;
+    overflow: hidden;
+
+    @media (max-width: $width-mobile) {
+        height: 110px;
+    }
     
     &__title {
+        width: 100%;
         position: absolute;
-        inset: 0;
+        top: 50%;
+        transform: translateY(-50%);
         text-align: center;
-        line-height: 220px;
         font-size: 3rem;
         color: white;
+
+        @media (max-width: $width-mobile) {
+            text-align: start;
+            font-size: 1.5rem;
+            padding-left: 15px;
+        }
+
+        &--mobile {
+            display: none;
+
+            @media (max-width: $width-mobile) {
+                display: block;
+            }
+        }
     }
     
     &__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: $section-rad;
 
 
     }
@@ -25,7 +45,6 @@
         position: absolute;
         inset: 0;
         background-color: rgba(0, 0, 0, 0.3);
-        border-radius: $section-rad;
         z-index: 0;
     }
 

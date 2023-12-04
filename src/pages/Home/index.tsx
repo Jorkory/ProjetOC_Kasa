@@ -7,7 +7,7 @@ function Home() {
   return (
     <main>
       <section className='banner'>
-        <Banner title="Chez vous, partout et ailleurs" image={bannerImage} alt='falaise rocheuse au bord de la mer' />
+        <Banner title="Chez vous, <br class='banner__title--mobile'/>partout et ailleurs" image={bannerImage} alt='falaise rocheuse au bord de la mer' />
       </section>
       <section className='cards'>
         <Cards />

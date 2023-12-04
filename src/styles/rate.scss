@@ -6,6 +6,11 @@
         height: 36px;
         fill: #e3e3e3;
 
+        @media (max-width: $width-mobile) {
+            height: 25px;
+            width: 25px;
+        }
+
         &.fill {
             fill: $color-primary;
         }

@@ -3,7 +3,7 @@ export default function Banner(props: { title?: string; image: string; alt: stri
     return (
         <>
             <img className='banner__image' src={props.image} alt={props.alt} />
-            {props.title && <h1 className='banner__title'>{props.title}</h1>}
+            {props.title && <h1 className='banner__title' dangerouslySetInnerHTML={{ __html: props.title }}></h1>}
         </>
     )
 }

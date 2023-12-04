@@ -16,5 +16,12 @@ footer {
         margin-top: 28px;
         font-size: 1.5rem;
         color: white;
+
+        @media (max-width: $width-mobile) {
+            width: 130px;
+            font-size: 0.8rem;
+            text-align: justify;
+            text-align: center;
+        }
     }
 }

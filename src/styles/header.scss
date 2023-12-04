@@ -2,23 +2,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 45px;
+
+    @media (max-width: $width-mobile) {
+     padding-top: 20px;   
+    }
 
     .logo {
         width: 210px;
         height: 68px;
         fill: $color-primary;
+
+        @media (max-width: $width-mobile) {
+            width: 140px;
+        }
     }
 
     .navbar {
         list-style: none;
         display: flex;
+        padding: 0;
+        gap: 67px;
+
+        @media (max-width: $width-mobile) {
+            gap: 25px;
+        }
 
 
         &__link {
             font-size: 1.5rem;
             text-decoration: none;
-            margin-left: 57px;
+
+            @media (max-width: $width-mobile) {
+                font-size: 1rem;
+            }
             
             &.active {
                 text-decoration: underline;
