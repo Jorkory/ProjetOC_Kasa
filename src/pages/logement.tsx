@@ -13,12 +13,10 @@ function Logement() {
         return <Navigate to="/notFound" />
     }
 
-    const pictures = logement.pictures
-
     return (
         <main>
             <section>
-                <Slideshow pictures={pictures} />
+                <Slideshow pictures={logement.pictures} />
             </section>
             <section className="logement">
                 <div className="logement__location">
