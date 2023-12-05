@@ -22,14 +22,7 @@
             text-align: start;
             font-size: 1.5rem;
             padding-left: 15px;
-        }
-
-        &--mobile {
-            display: none;
-
-            @media (max-width: $width-mobile) {
-                display: block;
-            }
+            width: 220px;
         }
     }
     

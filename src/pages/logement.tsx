@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
-import Slideshow from "../../components/slideshow"
-import jsonData from '../../data/logements.json'
+import Slideshow from "../components/slideshow"
+import jsonData from '../data/logements.json'
 import { Navigate } from "react-router-dom"
-import Collapse from "../../components/collapse"
-import Rate from "../../components/rate"
+import Collapse from "../components/collapse"
+import Rate from "../components/rate"
 
 function Logement() {
     const { logementId } = useParams()

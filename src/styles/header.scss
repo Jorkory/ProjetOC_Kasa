@@ -36,6 +36,7 @@ header {
 
             @media (max-width: $width-mobile) {
                 font-size: 1rem;
+                text-transform: uppercase;
             }
             
             &.active {

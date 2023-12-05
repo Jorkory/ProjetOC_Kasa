@@ -1,6 +1,6 @@
-import bannerImage from '../../assets/montagne.jpg'
-import Banner from "../../components/banner";
-import Collapse from '../../components/collapse';
+import bannerImage from '../assets/montagne.jpg'
+import Banner from "../components/banner";
+import Collapse from '../components/collapse';
 
 function Propos() {
     return (

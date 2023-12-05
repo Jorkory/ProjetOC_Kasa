@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/layout';
-import Error from './pages/Error';
-import Home from './pages/Home';
-import Logement from './pages/Logement';
-import Propos from './pages/Propos';
+import Error from './pages/error';
+import Home from './pages/home';
+import Logement from './pages/logement';
+import Propos from './pages/propos';
 import './styles/global.scss';
 
 const router = createBrowserRouter([
