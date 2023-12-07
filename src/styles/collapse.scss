@@ -30,27 +30,34 @@
     }
 
     // overflow: hidden;
-    &__content {
+    &__body {
+        display: grid;
+        grid-template-rows: 1fr;
         background-color: $color-secondary;
         border-radius: 5px;
-        max-height: 500px;
         color: $color-primary;
-        transition: max-height 400ms ease-in-out;
+        transition: grid-template-rows 400ms ease-in-out;
         z-index: -1;
-        overflow: hidden;
         
-        & > p, ul {
-            padding: 20px;
-            list-style: none;
-            transition: transform 400ms ease-in-out;
-        }
-        
-        &.hidden {
-            max-height: 0;
-
+        &__content {
+            overflow: hidden;
+            
             & > p, ul {
-                transform: translateY(-50px);
+                box-sizing: border-box;
+                padding: 20px;
+                list-style: none;
+                transition: transform 400ms ease-in-out;
+                width: 100%;
+            }
+        }
+
+        &.hidden {
+            grid-template-rows: 0fr;
+
+            & p,& ul {
+                transform: translateY(-300px);
             }
         }     
+        
     }
 }

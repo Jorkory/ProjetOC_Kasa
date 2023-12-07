@@ -10,8 +10,10 @@ export default function Collapse(props: { title: string; children: React.ReactNo
                 {props.title}
                 <Arrow className={show ? "arrow down" : "arrow"} onClick={() => setShow(!show)} />
             </h2>
-            <div className={show ? "collapse__content" : "collapse__content hidden"}>
-                {props.children}
+            <div className={show ? "collapse__body" : "collapse__body hidden"}>
+                <div className='collapse__body__content'>
+                    {props.children}
+                </div>
             </div>
         </div>
     )
